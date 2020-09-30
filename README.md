@@ -6,23 +6,23 @@ https://www.kaggle.com/clmentbisaillon/fake-and-real-news-dataset
 We have 2 datasets with Real News data and Fake News data. Each dataset has around 22000 articles. As we merge both, we have around 45000 articles of real and fake. The aim is to build a model to correctly predict if a news is real or fake.
 
 ## Table of Contents
-1. Import Packages
-2. Read Data
-  a. Create Target based on Real and Fake data
-  b. Concat both real and fake data
-3. Data Analysis
-  a. Missing value Treatment
-  b. Merge Title and Text data
-4. Data Cleaning
-  a. Preprocessing Text to get Stemmed and Lemmatized Corpus
-  b. WordCloud for label=1 -- Real News
-  c. WordCloud for label=0 -- Fake News
-5. Classification models using CountVectorizer and TFIDF Vectorizer
-  a. Using CountVectorizer and TFIDF Vectorizer with stemmed text
-  b. Using CountVectorizer and TFIDF Vectorizer with lemmatized text
-6. LSTM model using One Hot vector
-  a. Using One hot representation and Stemmed Text
-  b. Evaluate model
-  c. Using One hot representation and Lemmatized Text
-  d. Evaluate model
-7. Conclusion
+1. [Import Packages](#import-packages)
+2. [Read Data](#read-data)
+    * [Create Target based on Real and Fake data](#create-target)
+    * [Concat both real and fake data](#concat-data)
+3. [Data Analysis](#data-analysis)
+    * [Missing value Treatment](#treat-missing-value)
+    * [Merge Title and Text data](#merge-title-text)
+4. [Data Cleaning](#data-cleaning)
+    * [Preprocessing Text to get Stemmed and Lemmatized Corpus](#Preprocess-text)
+    * [WordCloud for label=1 -- Real News](#word-cloud-label-1)
+    * [WordCloud for label=0 -- Fake News](#word-cloud-label-0)
+5. [Classification models using CountVectorizer and TFIDF Vectorizer](#create-models)
+    * [Using CountVectorizer and TFIDF Vectorizer with stemmed text](#counttfidf-stemmed)
+    * [Using CountVectorizer and TFIDF Vectorizer with lemmatized text](#counttfidf-lemmatized)
+6. [LSTM model using One Hot vector](#one-hot-vector-lstm)
+    * [Using One hot representation and Stemmed Text](#one-hot-stemmed)
+    * [Evaluate model](#stemmed-evaluate)
+    * [Using One hot representation and Lemmatized Text](#one-hot-lemmatized)
+    * [Evaluate model](#lemmatized-evaluate)
+7. [Conclusion](#conclusion)
