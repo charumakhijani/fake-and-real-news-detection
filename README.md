@@ -1,4 +1,6 @@
 # Fake-And-Real-News-Detection
+## Misinformation is one of the biggest issues in today's society and Fake news is a real problem
+
 Dataset used is from Kaggle- 
 https://www.kaggle.com/clmentbisaillon/fake-and-real-news-dataset
 
